@@ -1,0 +1,107 @@
+#:import rgba kivy.utils.get_color_from_hex
+#:import utils kivy.utils
+
+<MenuScreen>:
+
+    name: "MenuScreen"
+
+    GridLayout:
+        cols: 1
+        Label:
+            text: "Hello World!"
+            font_size: 30
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
+        
+        GridLayout:
+            cols: 2
+            GridLayout:
+                cols: 1
+                padding: [10, 10, 5, 5]
+                Button:
+                    text: "Sub Menu 1"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_sub_menu_one()
+            GridLayout:
+                cols: 1
+                padding: [5, 10, 10, 5]
+                Button:
+                    text: "Sub Menu 2"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_sub_menu_two()
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 10]
+                Button:
+                    text: "Sub Menu 3"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_sub_menu_three()
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 10]
+                Button:
+                    text: "Sub Menu 4"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_sub_menu_four()
+            
+<ExcelFileBrowser>:
+    label: label
+    name: "ExcelFileBrowser"
+    orientation: "vertical"
+    BoxLayout:
+        FileChooserListView:
+            # False is default, set to True to select directories
+            dirselect: False
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#212121")
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            on_selection: root.select(*args)
+        BoxLayout:
+            orientation: "vertical"
+            cols: 2
+            GridLayout:
+                cols: 1
+                padding: [2, 2, 2, 1]
+                Button:
+                    text: "Go Back"
+                    font_size: 20
+                    on_release: root.back_click()
+            GridLayout:
+                cols: 1
+                padding: [2, 1, 2, 2]
+                Button:
+                    text: "Select Data File to Upload"
+                    font_size: 20
+                    on_release: root.ok_click()      
+    Label:
+        id: label
+        size_hint_y: .1
+        canvas.before:
+            Color:
+                rgba: utils.get_color_from_hex("#065464")
+            Rectangle:
+                pos: self.pos
+                size: self.size
+<SubMenuScreen>:
+    Label: 
+        text: "HI"
+
+
+
+
