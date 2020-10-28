@@ -8,7 +8,7 @@
     GridLayout:
         cols: 1
         Label:
-            text: "Hello World!"
+            text: "Wayne Enterprises Data App"
             font_size: 30
             text_size: self.size
             halign: "center"
@@ -98,10 +98,361 @@
             Rectangle:
                 pos: self.pos
                 size: self.size
-<SubMenuScreen>:
-    Label: 
-        text: "HI"
+<SubMenuOne>:
+    GridLayout:
+        cols: 1
+        Label:
+            text: "Sub Menu One"
+            font_size: 30
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
 
+        GridLayout:
+            cols: 2
+            GridLayout:
+                cols: 1
+                padding: [10, 10, 5, 5]
+                Button:
+                    text: "Load Data"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_load_data()
+            
+            GridLayout:
+                cols: 1
+                padding: [5, 10, 10, 5]
+                Button:
+                    text: "Procedure 1"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_1()
+                
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 5]
+                Button:
+                    text: "Procedure 2"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_2()
 
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 5]
+                Button:
+                    text: "Procedure 3"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_3()
 
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 10]
+                Button:
+                    text: "Procedure 4"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_4()
+
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 10]
+                Button:
+                    text: "Return to Menu"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_return_menu()
+
+<SubMenuTwo>:
+    GridLayout:
+        cols: 1
+        Label:
+            text: "Sub Menu Two"
+            font_size: 30
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
+
+        GridLayout:
+            cols: 2
+            GridLayout:
+                cols: 1
+                padding: [10, 10, 5, 5]
+                Button:
+                    text: "Load Data"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_load_data()
+            
+            GridLayout:
+                cols: 1
+                padding: [5, 10, 10, 5]
+                Button:
+                    text: "Procedure 1"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_1()
+                
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 5]
+                Button:
+                    text: "Procedure 2"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_2()
+
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 5]
+                Button:
+                    text: "Procedure 3"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_3()
+
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 10]
+                Button:
+                    text: "Procedure 4"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_4()
+
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 10]
+                Button:
+                    text: "Return to Menu"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_return_menu()
+
+<SubMenuThree>:
+    GridLayout:
+        cols: 1
+        Label:
+            text: "Sub Menu Three"
+            font_size: 30
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
+
+        GridLayout:
+            cols: 2
+            GridLayout:
+                cols: 1
+                padding: [10, 10, 5, 5]
+                Button:
+                    text: "Load Data"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_load_data()
+            
+            GridLayout:
+                cols: 1
+                padding: [5, 10, 10, 5]
+                Button:
+                    text: "Procedure 1"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_1()
+                
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 5]
+                Button:
+                    text: "Procedure 2"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_2()
+
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 5]
+                Button:
+                    text: "Procedure 3"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_3()
+
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 10]
+                Button:
+                    text: "Procedure 4"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_4()
+
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 10]
+                Button:
+                    text: "Return to Menu"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_return_menu()
+
+<SubMenuFour>:
+    GridLayout:
+        cols: 1
+        Label:
+            text: "Sub Menu Four"
+            font_size: 30
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
+
+        GridLayout:
+            cols: 2
+            GridLayout:
+                cols: 1
+                padding: [10, 10, 5, 5]
+                Button:
+                    text: "Load Data"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_load_data()
+            
+            GridLayout:
+                cols: 1
+                padding: [5, 10, 10, 5]
+                Button:
+                    text: "Procedure 1"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_1()
+                
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 5]
+                Button:
+                    text: "Procedure 2"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_2()
+
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 5]
+                Button:
+                    text: "Procedure 3"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_3()
+
+            GridLayout:
+                cols: 1
+                padding: [10, 5, 5, 10]
+                Button:
+                    text: "Procedure 4"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_proc_4()
+
+            GridLayout:
+                cols: 1
+                padding: [5, 5, 10, 10]
+                Button:
+                    text: "Return to Menu"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_return_menu()
+
+<DataLoadScreen>:
+    name: "DataLoadScreen"
+
+    BoxLayout:
+        orientation: "horizontal"
+        Label:
+            text: "Load Data"
+            font_size: 20
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
+        BoxLayout:
+            orientation: "vertical"
+            GridLayout:
+                cols: 1
+                padding: [2, 2, 2, 1]
+                Button:
+                    text: "Go Back"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_back()
+            GridLayout:
+                cols: 1
+                padding: [2, 1, 2, 2]
+                Button:
+                    text: "Load Data Sets, Return to Menu"
+                    font_size: 20
+                    text_size: self.size
+                    halign: "center"
+                    valign: "middle"
+                    on_release: root.hit_load_data()
+    
+    GridLayout:
+        cols: 2
+        GridLayout:
+            cols: 1
+            padding: [2, 2, 1, 1]
+            Label:
+                text: "Browse for Excel File"
+                text_size: self.size
+                halign: "center"
+                valign: "middle"
+        # PICKUP 10.28.2020 - FINISH DATA LOAD SCREEN
 

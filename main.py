@@ -27,19 +27,105 @@ from CustomScreens.FileBrowserInterface import FileBrowserInterface
 # Menu
 class MenuScreen(Screen):
     def hit_sub_menu_one(self):
-        sm.current = "ExcelFileBrowser"
+        sm.current = "SubMenuOne"
 
     def hit_sub_menu_two(self):
-        pass
+        sm.current = "SubMenuTwo"
 
     def hit_sub_menu_three(self):
-        pass
+        sm.current = "SubMenuThree"
 
     def hit_sub_menu_four(self):
+        sm.current = "SubMenuFour"
+
+class DataLoadScreen(Screen):
+    def browse_file(self):
+        sm.current = "ExcelFileBrowser"
+
+    def hit_back(self):
+        # -- update to sub menu as applicable --
+        sm.current = "MainMenu"
+    
+    def hit_load_data(self):
+        """ -- INSERT data loading logic --"""
+        sm.current = "MainMenu"
+
+    
+class SubMenuOne(Screen):
+    def hit_proc_1(self):
         pass
 
-class SubMenuScreen(Screen):
-    pass
+    def hit_proc_2(self):
+        pass
+
+    def hit_proc_3(self):
+        pass
+
+    def hit_proc_4(self):
+        pass
+
+    def hit_return_menu(self):
+        sm.current = "MenuScreen"
+
+    def hit_load_data(self):
+        sm.current = "DataLoadScreen"
+
+class SubMenuTwo(Screen):
+    def hit_proc_1(self):
+        pass
+
+    def hit_proc_2(self):
+        pass
+
+    def hit_proc_3(self):
+        pass
+
+    def hit_proc_4(self):
+        pass
+
+    def hit_return_menu(self):
+        sm.current = "MenuScreen"
+
+    def hit_load_data(self):
+        sm.current = "DataLoadScreen"
+
+class SubMenuThree(Screen):
+    def hit_proc_1(self):
+        pass
+
+    def hit_proc_2(self):
+        pass
+
+    def hit_proc_3(self):
+        pass
+
+    def hit_proc_4(self):
+        pass
+
+    def hit_return_menu(self):
+        sm.current = "MenuScreen"
+
+    def hit_load_data(self):
+        sm.current = "DataLoadScreen"
+
+class SubMenuFour(Screen):
+    def hit_proc_1(self):
+        pass
+
+    def hit_proc_2(self):
+        pass
+
+    def hit_proc_3(self):
+        pass
+
+    def hit_proc_4(self):
+        pass
+
+    def hit_return_menu(self):
+        sm.current = "MenuScreen"
+
+    def hit_load_data(self):
+        sm.current = "DataLoadScreen"
 
 # File Browser
 class ExcelFileBrowser(FileBrowserInterface):
@@ -71,7 +157,10 @@ sm = WindowManager()
 kv = Builder.load_file("Data.kv")
 
 # list of screens 
-screens = [MenuScreen(name="MenuScreen"), ExcelFileBrowser(name="ExcelFileBrowser")]
+screens = [MenuScreen(name="MenuScreen"), ExcelFileBrowser(name="ExcelFileBrowser"),
+            SubMenuOne(name="SubMenuOne"), SubMenuTwo(name="SubMenuTwo"), 
+            SubMenuThree(name="SubMenuThree"), SubMenuFour(name="SubMenuFour"),
+            DataLoadScreen(name="DataLoadScreen")]
 
 # add screens to screen manager
 for screen in screens:
